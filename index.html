@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karthik Reddy Devireddy — Artificial Intelligence and Machine Learning student at SIMATS University.">
+<title>Karthik Reddy Devireddy</title>
+<style>
+:root{
+  --bg:#f7f7f5;--surface:#fff;--text:#171717;--muted:#686868;
+  --line:#e7e7e4;--accent:#111;--soft:#f0f0ed;--max:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}
+.container{width:min(var(--max),90%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;background:rgba(247,247,245,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:20}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:1.05rem;letter-spacing:-.03em}
+.logo span{font-weight:400;color:var(--muted)}
+.links{display:flex;gap:28px;font-size:.88rem;color:var(--muted)}
+.links a:hover{color:var(--text)}
+.hero{padding:170px 0 115px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:end}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.73rem;font-weight:700;color:#777;margin-bottom:20px}
+h1{font-size:clamp(3.3rem,8vw,6.8rem);letter-spacing:-.075em;line-height:.92;font-weight:750}
+.hero h1 span{display:block;color:#777}
+.intro{font-size:1.05rem;color:var(--muted);max-width:620px;margin-top:28px}
+.actions{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+.btn{padding:11px 17px;border:1px solid #ccc;border-radius:8px;font-size:.86rem;font-weight:650;background:var(--surface)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn:hover{transform:translateY(-1px)}
+.hero-note{border-left:2px solid #222;padding-left:22px;color:var(--muted);font-size:.9rem}
+section{padding:92px 0;border-bottom:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:25px;margin-bottom:38px}
+.section-head h2{font-size:2rem;letter-spacing:-.045em}
+.section-head p{color:var(--muted);font-size:.9rem}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.about p{color:var(--muted);font-size:1.02rem}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.skill{padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:150px}
+.skill h3{font-size:1rem;margin-bottom:12px}
+.skill p{font-size:.84rem;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:.76rem;padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:#fff}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;min-height:245px;display:flex;flex-direction:column}
+.project-num{font-size:.72rem;color:#888;font-weight:700;letter-spacing:.1em}
+.project h3{font-size:1.45rem;letter-spacing:-.03em;margin:16px 0 8px}
+.project p{color:var(--muted);font-size:.9rem}
+.project-foot{margin-top:auto;padding-top:24px;font-size:.75rem;color:#888}
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cert{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.cert img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;background:#fff}
+.cert-body{padding:17px}
+.cert-body h3{font-size:.94rem;line-height:1.35}
+.cert-body p{font-size:.76rem;color:var(--muted);margin-top:5px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact h2{font-size:clamp(2.3rem,5vw,4rem);letter-spacing:-.06em;line-height:1}
+.contact p{color:var(--muted);margin-top:18px;max-width:500px}
+.contact-list{display:flex;flex-direction:column}
+.contact-link{padding:17px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:.9rem}
+.contact-link span{color:var(--muted)}
+footer{padding:30px 0;color:#888;font-size:.78rem}
+@media(max-width:800px){
+ .links{display:none}.hero{padding-top:130px}.hero-grid,.about,.contact{grid-template-columns:1fr;gap:35px}
+ .skills{grid-template-columns:1fr 1fr}.certs{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+ .projects,.skills,.certs{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:6px}
+ h1{font-size:3.6rem}
+}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="logo" href="#home">Karthik Reddy <span>Devireddy</span></a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="kicker">Computer Science Student · SIMATS University</div>
+<h1>Karthik Reddy<span>Devireddy.</span></h1>
+<p class="intro">I’m a Computer Science student building a strong foundation in programming, software engineering, databases, networking and emerging technologies through academic learning and hands-on coursework.</p>
+<div class="actions">
+<a class="btn primary" href="#work">View work</a>
+<a class="btn" href="mailto:karthikreddy0610@gmail.com">Email me</a>
+<a class="btn" href="https://github.com/karthikreddy0610" target="_blank">GitHub ↗</a>
+</div>
+</div>
+<div class="hero-note">Currently learning, experimenting and improving one project at a time.</div>
+</div>
+</header>
+
+<section id="about"><div class="container">
+<div class="section-head"><h2>About</h2><p>01 / 05</p></div>
+<div class="about">
+<div><strong>Student · Builder · Learner</strong></div>
+<div>
+<p>I am Karthik Reddy Devireddy, a student at SIMATS University. My technical foundation has primarily come from my college curriculum, where I have worked with programming, computer architecture, computer networks, database management systems and software engineering.</p>
+<p style="margin-top:18px">At this stage, my work is mainly academic. I use AI tools extensively during implementation and learning, while continuing to build my own understanding of the concepts behind each assignment and project.</p>
+</div>
+</div>
+</div></section>
+
+<section id="skills"><div class="container">
+<div class="section-head"><h2>Technical Foundation</h2><p>02 / 05</p></div>
+<div class="skills">
+<div class="skill"><h3>Programming</h3><div class="tags"><span class="tag">C</span><span class="tag">Python</span><span class="tag">Java</span></div></div>
+<div class="skill"><h3>Web</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div><p style="margin-top:12px">Fundamentals developed through coursework and certification practice.</p></div>
+<div class="skill"><h3>Core CS</h3><div class="tags"><span class="tag">DBMS</span><span class="tag">Networks</span><span class="tag">Architecture</span></div></div>
+<div class="skill"><h3>Engineering</h3><div class="tags"><span class="tag">Software Engineering</span><span class="tag">IoT</span><span class="tag">AI</span></div></div>
+</div>
+</div></section>
+
+<section id="work"><div class="container">
+<div class="section-head"><h2>Academic Work</h2><p>03 / 05</p></div>
+<div class="projects">
+<div class="project"><div class="project-num">PROJECT 01 · JAVA</div><h3>Campus Care</h3><p>Student complaint and service management system with registration/login, complaint submission, tracking and an admin dashboard.</p><div class="project-foot">College project · AI-assisted implementation</div></div>
+<div class="project"><div class="project-num">PROJECT 02 · DATA & ANALYTICS</div><h3>RetailPulse</h3><p>Academic data-oriented project focused on learning data handling, analysis and presentation concepts.</p><div class="project-foot">College project · AI-assisted implementation</div></div>
+</div>
+</div></section>
+
+<section id="certificates"><div class="container">
+<div class="section-head"><h2>Certificates</h2><p>04 / 05</p></div>
+<div class="certs">
+<div class="cert"><img src="assets/nptel-iot.png" alt="NPTEL IoT certificate"><div class="cert-body"><h3>NPTEL — Introduction to Internet of Things</h3><p>Elite · 69% · Jan–Apr 2026</p></div></div>
+<div class="cert"><img src="assets/onroadmap-python.png" alt="Python certificate"><div class="cert-body"><h3>OneRoadmap — Python</h3><p>Skill Certification · Nov 2025</p></div></div>
+<div class="cert"><img src="assets/onroadmap-css.png" alt="CSS certificate"><div class="cert-body"><h3>OneRoadmap — CSS</h3><p>Skill Certification · Nov 2025</p></div></div>
+<div class="cert"><img src="assets/onroadmap-ai-engineer.png" alt="AI Engineer certificate"><div class="cert-body"><h3>OneRoadmap — AI Engineer</h3><p>Skill Certification · Nov 2025</p></div></div>
+<div class="cert"><img src="assets/hybrid-electric-vehicle.png" alt="Hybrid Electric Vehicle certificate"><div class="cert-body"><h3>Self-Charged Hybrid Electric Vehicle</h3><p>E-learning course · Dec 2025</p></div></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="container">
+<div class="section-head"><h2>Contact</h2><p>05 / 05</p></div>
+<div class="contact">
+<div><h2>Let’s connect.</h2><p>For internships, learning opportunities, collaborations or just a conversation about technology.</p></div>
+<div class="contact-list">
+<a class="contact-link" href="mailto:karthikreddy0610@gmail.com">Email <span>karthikreddy0610@gmail.com ↗</span></a>
+<a class="contact-link" href="https://github.com/karthikreddy0610" target="_blank">GitHub <span>karthikreddy0610 ↗</span></a>
+<a class="contact-link" href="https://www.linkedin.com/in/karthik-reddy-devireddy-613062384" target="_blank">LinkedIn <span>Profile ↗</span></a>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="container">© 2026 Karthik Reddy Devireddy. All rights reserved.</div></footer>
+</body>
+</html>
